@@ -1,0 +1,55 @@
+GET http://localhost:8080/nace/
+Accept: application/json
+
+<> 2022-04-27T124746.200.json
+
+###
+
+GET http://localhost:8080/nace/399448
+Accept: application/json
+
+###
+
+POST http://localhost:8080/nace/
+Accept: application/json
+Content-Type: application/json
+
+{
+  "level": 4,
+  "code": "15.81",
+  "parent": "95.1",
+  "description": "Test Description",
+  "includes": "Nothing",
+  "alsoIncludes": "None",
+  "reference": "584.0",
+  "excludes": "",
+  "rulings": ""
+}
+
+###
+
+POST http://localhost:8080/nace/399478
+Accept: application/json
+Content-Type: application/json
+
+{
+  "level": 4,
+  "code": "15.81",
+  "parent": "95.1",
+  "description": "Test Description",
+  "includes": "Nothing",
+  "alsoIncludes": "None",
+  "reference": "584.0",
+  "excludes": "",
+  "rulings": ""
+}
+
+###
+
+POST http://localhost:8080/nace/bulk-import
+Accept: application/json
+Content-Type: application/json
+
+< D:\GIT\TestProject\src\main\resources\nace-entries.json
+
+###
